@@ -15,10 +15,10 @@ make menuconfig
 make -j8 download V=s
 
 更新argon 主题
-cd lede/package/lean  
-rm -rf luci-theme-argon  
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  
-make menuconfig #choose LUCI->Theme->Luci-theme-argon  
+cd lede/package/lean
+rm -rf luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+make menuconfig #choose LUCI->Theme->Luci-theme-argon
 
 开始编译
 make -j6 V=s

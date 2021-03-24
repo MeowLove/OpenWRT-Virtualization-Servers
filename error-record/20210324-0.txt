@@ -1,0 +1,17 @@
+make: *** [world] Error 1
+make -r world: build failed. Please re-run make with -j1 V=s or V=sc for a higher verbosity level to see what's going on
+/workdir/openwrt/include/toplevel.mk:222: recipe for target 'world' failed
+ make[1] world
+
+
+
+-----------------------------------------------------------------------------------
+To connect to this session copy and paste the following into a terminal or browser:
+CLI: ssh 39yWPRxypcehJgtWfj5ujzGU5@nyc1.tmate.io
+URL: https://tmate.io/t/39yWPRxypcehJgtWfj5ujzGU5
+TIPS: Run 'touch /tmp/continue' to continue to the next step.
+-----------------------------------------------------------------------------------
+
+
+
+curl --upload-file cxt.config https://transfer.sh/cxt.config

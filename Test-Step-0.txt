@@ -1,0 +1,25 @@
+Ubuntu18.04环境准备
+sudo apt-get update
+sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git libncurses5-dev libz-dev patch python3 python2.7 unzip zlib1g-dev lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core gcc-multilib p7zip p7zip-full msmtp libssl-dev texinfo libglib2.0-dev xmlto qemu-utils upx libelf-dev autoconf automake libtool autopoint device-tree-compiler g++-multilib antlr3 gperf wget curl swig rsync mkisofs
+
+克隆LEDE源码
+git clone https://github.com/coolsnowwolf/lede
+cd lede
+
+更新feeds
+./scripts/feeds update -a
+./scripts/feeds install -a
+make menuconfig
+
+下载dl库（国内请尽量全局科学上网）
+make -j8 download V=s
+
+更新argon 主题
+cd lede/package/lean  
+rm -rf luci-theme-argon  
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  
+make menuconfig #choose LUCI->Theme->Luci-theme-argon  
+
+开始编译
+make -j6 V=s
+ （-j1 后面是线程数。第一次编译推荐用单线程）即可开始编译你要的固件了。

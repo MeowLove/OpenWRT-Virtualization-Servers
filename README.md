@@ -1,24 +1,67 @@
-# OpenWRT-虚拟化-服务器专用（OpenWRT-Virtualization-Servers）
+<div align="center">
+  <img src="https://raw.githubusercontent.com/MeowLove/OpenWRT-Virtualization-Servers/master/background/CXT_Logo.png"  >
+  <h1 align="center">
+    OpenWRT-虚拟化-服务器专用 <br>（OpenWRT-Virtualization-Servers）
+  </h1>
+  <h3 align="center">
+    适用于虚拟化服务器和软件路由器的OpenWRT，纯净版本。<br> （OpenWRT(LEDE) for virtualized servers and software routers, pure version.） <br><br>
+  </h3>
 
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/MeowLove/OpenWRT-Virtualization-Servers/blob/master/LICENSE)
-![GitHub Stars](https://img.shields.io/github/stars/MeowLove/OpenWRT-Virtualization-Servers.svg?style=flat-square&label=Stars&logo=github)
-![GitHub Forks](https://img.shields.io/github/forks/MeowLove/OpenWRT-Virtualization-Servers.svg?style=flat-square&label=Forks&logo=github)
+  <a href="/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="">
+  </a>
 
-- 适用于虚拟化服务器和软件路由器的OpenWRT，纯净版本。（OpenWRT(LEDE) for virtualized servers and software routers, pure version.）
-- 版本跟随【[一键网络重装系统-魔改版](https://www.cxthhhhh.com/network-reinstall-system-modify)】/【[Network-Reinstall-System-Modify](https://github.com/MeowLove/Network-Reinstall-System-Modify)】更新。
+  <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/pulls">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="">
+  </a>
+  
+  <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/issues/new">
+    <img src="https://img.shields.io/badge/Issues-welcome-brightgreen.svg">
+  </a>
+  
+  <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases">
+    <img src="https://img.shields.io/badge/release-0.2.5-blue.svg?">
+  </a>
+  
+  <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases">
+    <img src="https://img.shields.io/github/stars/MeowLove/OpenWRT-Virtualization-Servers.svg?style=flat-square&label=Stars&logo=github">
+  </a>
+  
+  <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/">
+    <img src="https://img.shields.io/github/forks/MeowLove/OpenWRT-Virtualization-Servers.svg?style=flat-square&label=Forks&logo=github">
+  </a>
+  
+  <a href="https://t.me/Technical_Blog">
+    <img src="https://img.shields.io/badge/Contact-telegram-orange">
+  </a>
+  
+</div>
+<br>
+<div align="center">
+  <h3 align="center">
+    版本跟随【[一键网络重装系统-魔改版](https://www.cxthhhhh.com/network-reinstall-system-modify)】/【[Network-Reinstall-System-Modify](https://github.com/MeowLove/Network-Reinstall-System-Modify)】更新 <br><br>
+  <hr>
+    预览图仅供参考，非最新，一切以成品为准，欢迎大家加入，一起构建更好的系统<br>[【OpenWRT-虚拟化-服务器专用 （OpenWRT-Virtualization-Servers）】](https://github.com/MeowLove/OpenWRT-Virtualization-Servers)<br><br>
+  </h3>
+  <img src="https://raw.githubusercontent.com/MeowLove/OpenWRT-Virtualization-Servers/master/background/Preview_WebUI.png">
+  <img src="https://raw.githubusercontent.com/MeowLove/OpenWRT-Virtualization-Servers/master/background/Preview_Function.png">
+</div>
+
 
 ## 功能：
 
 - 完整的[OpenWRT](https://openwrt.org/) and [LEDE](https://github.com/coolsnowwolf/lede)功能（无富强组件）。
 - 完整的IPV6支持，以及DHCPv6支持（支持将宿主机绑定的IPV6分配给虚拟机，支持DUID绑定功能）。 
-- 精美的Luci主题[luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon)
+- 精美的Luci主题[luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon)，CXT修改版。（搭配快乐粉和轻量壁纸）
 - 大储存空间，支持自由安装软件。（在线安装/Web上传ipk均可）
+<br>
 
 - SSH / TTYD终端 / UPnP（通用即插即用）
 - 磁盘挂载 / FTP / 文件传输 / Rclone / Samba网络共享
 - 计划任务 / 网络监测 / NTP服务器 / uHTTPd / 定时重启
 - 带宽监控 / 流量统计 / 上网时间控制 / Turbo ACC 网络加速
 - BBR / SFE Fast Path 加速 / DNS加速 / IPv6 加速 / 桥接加速
+<br>
 
 - 广告屏蔽大师 Plus+（内网去广告） / WatchCat（断网自动重启）
 - 动态 DNS（DDNS IPV4 and IPV6） / 网络唤醒 / KMS服务器
@@ -29,6 +72,7 @@
 - 镜像为虚拟化服务器专用（PVE/VirtualBox/VMware/KVM/XEN/LXC）等x86_64平台使用。
 - 多种镜像可供选择（Legacy / UEFI）（ img / qcow2 / vmdk / vdi / bin ）
 - 支持定制其他设备镜像，可前往博客[CXT - Enjoy Life | 生活、技术、交友、分享](https://www.cxthhhhh.com/)联系定制。
+<br>
 
 - 1、【虚拟机】下载镜像上传到您的宿主机，开虚拟机，将CXT-OpenWRT磁盘导入虚拟机使用。
 - 2、【宿主机】服务器可使用[一键网络重装系统-魔改版](https://www.cxthhhhh.com/network-reinstall-system-modify)一键DD，或手动DD到硬盘使用。

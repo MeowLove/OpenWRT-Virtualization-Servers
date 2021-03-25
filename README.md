@@ -22,7 +22,7 @@
   </a>
   
   <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases">
-    <img src="https://img.shields.io/badge/release-0.2.9-blue.svg?">
+    <img src="https://img.shields.io/badge/release-0.3.0-blue.svg?">
   </a>
   
   <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases">
@@ -103,6 +103,9 @@
 - 开启仅允许Lan口访问Web管理页面，将 option rfc1918_filter 从'0' 改为 '1'，重启机器，即生效。
 - 4、其他设置，建议WebUI操作。
 - 通过以上VNC的Shell操作，正常配置网络，已保证Wan口访问WebUI。
+- 5、WebUI登陆后，可修改防火墙放行Wan口所有数据，或执行自己需要的操作。
+- 自行安装软件，可通过Web自带的文件传输安装或在线包和软件提供在线库安装任意软件。
+- 可挂载额外硬盘做微力同步、BT下载、家庭云盘等，享受一切折腾的快乐~
 
 ## 再次感谢
 
@@ -125,3 +128,10 @@
 - [ActionsRML/delete-workflow-runs](https://github.com/ActionsRML/delete-workflow-runs)
 - [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
 - [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
+
+
+## [CXT - Enjoy Life | 生活、技术、交友、分享](https://www.cxthhhhh.com/)
+
+- [CXT 社区 | OpenWRT 玩家](https://bbs.cxthhhhh.com)
+- [Telegram 组群 Technical Blog | 技術博客](https://t.me/Technical_Blog)
+- [Telegram 频道 My Share](https://t.me/me_share)

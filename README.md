@@ -1,5 +1,7 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/MeowLove/OpenWRT-Virtualization-Servers/master/background/CXT_Logo.png"  >
+  <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers">
+      <img src="https://raw.githubusercontent.com/MeowLove/OpenWRT-Virtualization-Servers/master/background/CXT_Logo.png"  >
+  </a>
   <h1 align="center">
     OpenWRT-虚拟化-服务器专用 <br>（OpenWRT-Virtualization-Servers）
   </h1>

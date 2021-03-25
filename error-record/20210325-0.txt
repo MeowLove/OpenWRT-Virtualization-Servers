@@ -1,0 +1,32 @@
+cat << EOF >> ./firewall.config
+
+config rule
+        option name 'uhttpd-2096'
+        option target 'ACCEPT'
+        option src 'wan'
+        option proto 'tcp udp'
+        option dest_port '2096'
+
+EOF
+
+
+
+echo "
+config rule
+        option name 'uhttpd-2096'
+        option target 'ACCEPT'
+        option src 'wan'
+        option proto 'tcp udp'
+        option dest_port '2096'
+" >> ./firewall.config
+
+
+
+echo "
+config rule
+        option name 'uhttpd-2096'
+        option target 'ACCEPT'
+        option src 'wan'
+        option proto 'tcp udp'
+        option dest_port '2096'
+" >> ./firewall

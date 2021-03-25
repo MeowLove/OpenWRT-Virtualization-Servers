@@ -10,6 +10,9 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
+echo "Start CXT Setting the firmware 2"
+echo "Start CXT Setting the firmware 2"
+
 # Modify default IP
 sed -i 's/192.168.1.1/10.10.1.1/g' package/base-files/files/bin/config_generate
 
@@ -33,3 +36,19 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 # Modify default WIFI SSID 
 sed -i 's/OpenWrt/CXT-OpenWRT/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
+# Modify default WebUI Port 2096 (uhttpd) Allow Wan Access
+sed -i 's/:80/:2096/g' package/network/services/uhttpd/files/uhttpd.config
+sed -i 's/rfc1918_filter 1/rfc1918_filter 0/g' package/network/services/uhttpd/files/uhttpd.config
+
+# Add FireWall Wan Access uhttpd port 2096 in
+echo "
+config rule
+        option name 'uhttpd-2096-in'
+        option target 'ACCEPT'
+        option src 'wan'
+        option proto 'tcp udp'
+        option dest_port '2096'
+" >> package/network/config/firewall/files/firewall.config
+
+echo "End CXT Setting the firmware 2"
+echo "End CXT Setting the firmware 2"

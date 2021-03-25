@@ -23,3 +23,7 @@ make menuconfig #choose LUCI->Theme->Luci-theme-argon
 开始编译
 make -j6 V=s
  （-j1 后面是线程数。第一次编译推荐用单线程）即可开始编译你要的固件了。
+
+Warning: line endings have changed from 'LF' to 'CRLF'.
+git config core.eol lf
+git config core.autocrlf input

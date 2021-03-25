@@ -28,6 +28,12 @@ rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 sed -i "s/--primary: #5e72e4/--primary: #ff26d6d1/g" luci-theme-argon/htdocs/luci-static/argon/css/cascade.css
 sed -i "s/--primary: #5e72e4/--primary: #ff26d6d1/g" luci-theme-argon/htdocs/luci-static/argon/less/cascade.less
+
+# Add Themes WebUI Background
+wget -O 'cxt-background.zip' https://github.com/MeowLove/OpenWRT-Virtualization-Servers/raw/master/background/background.zip
+unzip cxt-background.zip -d luci-theme-argon/htdocs/luci-static/argon/
+cp luci-theme-argon/htdocs/luci-static/argon/background/bg1.jpg luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
+rm -rf cxt-background.zip
 cd ..
 cd ..
 

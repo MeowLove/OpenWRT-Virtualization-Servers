@@ -20,7 +20,7 @@
   </a>
   
   <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases">
-    <img src="https://img.shields.io/badge/release-0.2.5-blue.svg?">
+    <img src="https://img.shields.io/badge/release-0.2.6-blue.svg?">
   </a>
   
   <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases">
@@ -39,9 +39,9 @@
 <br>
 <div align="center">
   <h3 align="center">
-    版本跟随【[一键网络重装系统-魔改版](https://www.cxthhhhh.com/network-reinstall-system-modify)】/【[Network-Reinstall-System-Modify](https://github.com/MeowLove/Network-Reinstall-System-Modify)】更新 <br><br>
+    版本跟随 [一键网络重装系统-魔改版](https://www.cxthhhhh.com/network-reinstall-system-modify) 和 [Network-Reinstall-System-Modify](https://github.com/MeowLove/Network-Reinstall-System-Modify) 更新 <br><br>
   <hr>
-    预览图仅供参考，非最新，一切以成品为准，欢迎大家加入，一起构建更好的系统<br>[【OpenWRT-虚拟化-服务器专用 （OpenWRT-Virtualization-Servers）】](https://github.com/MeowLove/OpenWRT-Virtualization-Servers)<br><br>
+    预览图仅供参考，非最新，一切以成品为准，欢迎大家加入，一起构建更好的系统<br>[OpenWRT-虚拟化-服务器专用 （OpenWRT-Virtualization-Servers）](https://github.com/MeowLove/OpenWRT-Virtualization-Servers)<br><br>
   </h3>
   <img src="https://raw.githubusercontent.com/MeowLove/OpenWRT-Virtualization-Servers/master/background/Preview_WebUI.png">
   <img src="https://raw.githubusercontent.com/MeowLove/OpenWRT-Virtualization-Servers/master/background/Preview_Function.png">

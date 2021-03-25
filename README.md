@@ -22,7 +22,7 @@
   </a>
   
   <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases">
-    <img src="https://img.shields.io/badge/release-0.2.7-blue.svg?">
+    <img src="https://img.shields.io/badge/release-0.2.9-blue.svg?">
   </a>
   
   <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases">
@@ -60,6 +60,8 @@
 - 精美的Luci主题[luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon)，CXT修改版。（搭配快乐粉和轻量壁纸）
 - 大储存空间，支持自由安装软件。（在线安装/Web上传ipk均可）
 <br>
+<img src="https://raw.githubusercontent.com/MeowLove/OpenWRT-Virtualization-Servers/master/background/Preview_WebLogin.png">
+<br>  
 
 - SSH / TTYD终端 / UPnP（通用即插即用）
 - 磁盘挂载 / FTP / 文件传输 / Rclone / Samba网络共享

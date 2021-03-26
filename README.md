@@ -129,15 +129,19 @@
 
 ## 常见网络环境 部署简述
 <br>
+
 ### 宿主机多网卡，多IP
 - 最简单的情况，有手就行。Wan口通常DHCP自动获取网络，或VNC手动修改网络配置，绑定好wan和lan，重启即可访问。
 <br>
+
 ### 宿主机单网口，单/多IP
 - 虚拟机建2个网桥，一个绑定外网，一个绑定内网即可。同上，没什么区别。
 <br>
+
 ### 云服务器（虚拟机），单网口，单IP
 - DD安装好镜像后，OpenWRT启动日志停止后，VNC回车修改网络配置 vi /etc/config/network
 <br>
+
 #### 云服务器绑定IP到Wan口
 - 1、删除 Lan口 配置
 - 2、绑定网卡 eth0 到 Wan口，并设置DHCP自动获取。
@@ -160,6 +164,7 @@ config interface 'wan'
 - 5、成功访问到WebUI后，可以再添加wan6接口（IPV6）。网络配置参考下方官方文档说明：
 - OpenWRT官方文档：https://openwrt.org/docs/guide-user/base-system/basic-networking
 <br>
+
 #### 云服务器绑定IP到Lan口
 
 - 1、配置Lan口静态IP（动态IP同上Wan配置，不在举例，只是改个接口名字）

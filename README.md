@@ -116,11 +116,15 @@
 - 不会设置端口流量放行的话，就网络-防火墙-入站/出站/转发，所有规则改为ACCEPT接受。
 <br>
 
-- 8、安装自己需要的软件。本固件作为基本的OpenWRT框架，允许用户任意安装自己的软件。（相比市面其他固件，具有高达8倍的充足的储存空间）
-- 关于OpenWRT安装 XXX 软件，请谷歌搜索关键字“OpenWRT install XXX”，或者百度搜索“OpenWRT 安装 XXX”。这是非常的简单。
-- 例如：https://www.google.com/search?q=OpenWRT+install+WireGuard
-- 大多数软件的官方文档中均有提供安装说明，例如：https://openwrt.org/docs/guide-user/services/vpn/wireguard/basics
+## 安装自己需要的软件
+
+- 本固件作为基本的OpenWRT框架，允许用户任意安装自己的软件。（相比市面其他固件，具有高达8倍的充足的储存空间）
+- 关于OpenWRT安装 XXX 软件，请谷歌搜索关键字“OpenWRT install XXX”，或者百度搜索“OpenWRT 安装 XXX”。这是非常的简单。例如：
+- https://www.google.com/search?q=OpenWRT+install+WireGuard
+- 大多数软件的官方文档中均有提供安装说明，例如：
+- https://openwrt.org/docs/guide-user/services/vpn/wireguard/basics
 - 因此，在系统中安装软件这种，极其简单的问题，大家要多发挥自主搜索和解决问题的能力！
+<br>
 
 ## 再次感谢
 

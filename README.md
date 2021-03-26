@@ -22,7 +22,7 @@
   </a>
   
   <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases">
-    <img src="https://img.shields.io/badge/release-0.3.0-blue.svg?">
+    <img src="https://img.shields.io/badge/release-0.3.1-blue.svg?">
   </a>
   
   <a href="https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases">
@@ -52,6 +52,9 @@
 ## [OpenWRT-虚拟化-服务器专用 （OpenWRT-Virtualization-Servers）](https://github.com/MeowLove/OpenWRT-Virtualization-Servers)<br>
 
 版本跟随 [一键网络重装系统-魔改版](https://www.cxthhhhh.com/network-reinstall-system-modify) 和 [Network-Reinstall-System-Modify](https://github.com/MeowLove/Network-Reinstall-System-Modify) 更新 <br><br>
+下载最新【OpenWRT-Virtualization-Servers】镜像：<br>
+- 1、https://odc.cxthhhhh.com/
+- 2、https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases/
 
 ## 功能：
 

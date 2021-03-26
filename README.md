@@ -126,6 +126,72 @@
 - 因此，在系统中安装软件这种，极其简单的问题，大家要多发挥自主搜索和解决问题的能力！
 <br>
 
+
+## 常见网络环境 部署简述
+<br>
+### 宿主机多网卡，多IP
+- 最简单的情况，有手就行。Wan口通常DHCP自动获取网络，或VNC手动修改网络配置，绑定好wan和lan，重启即可访问。
+<br>
+### 宿主机单网口，单/多IP
+- 虚拟机建2个网桥，一个绑定外网，一个绑定内网即可。同上，没什么区别。
+<br>
+### 云服务器（虚拟机），单网口，单IP
+- DD安装好镜像后，OpenWRT启动日志停止后，VNC回车修改网络配置 vi /etc/config/network
+<br>
+#### 云服务器绑定IP到Wan口
+- 1、删除 Lan口 配置
+- 2、绑定网卡 eth0 到 Wan口，并设置DHCP自动获取。
+```
+config interface 'wan'
+    option ifname 'eth0'
+    option proto 'dhcp'
+```
+- 3、如果你的服务商未提供DHCP，那就配置Wan口静态IP。
+```
+config interface 'wan'
+	option ifname 'eth0'
+	option proto 'static'
+	option ipaddr 'x.x.x.x'
+	option netmask 'x.x.x.x'
+	option gateway 'x.x.x.x'
+	option dns '1.1.1.1 8.8.8.8 223.5.5.5'
+```
+- 4、重启网络命令，执行 /etc/init.d/network reload
+- 5、成功访问到WebUI后，可以再添加wan6接口（IPV6）。网络配置参考下方官方文档说明：
+- OpenWRT官方文档：https://openwrt.org/docs/guide-user/base-system/basic-networking
+<br>
+#### 云服务器绑定IP到Lan口
+
+- 1、配置Lan口静态IP（动态IP同上Wan配置，不在举例，只是改个接口名字）
+```
+config interface 'lan'
+	option type 'bridge'
+	option ifname 'eth0'
+	option proto 'static'
+	option ipaddr 'x.x.x.x'
+	option netmask 'x.x.x.x'
+	option gateway 'x.x.x.x'
+	option dns '1.1.1.1 8.8.8.8 223.5.5.5'
+```
+- 3、重启网络命令，执行 /etc/init.d/network reload
+- 4、成功访问到WebUI后，可以再添加wan6接口（IPV6）。网络配置参考下方官方文档说明：
+- OpenWRT官方文档：https://openwrt.org/docs/guide-user/base-system/basic-networking
+- 5、记得关闭OpenWRT在Lan口自带的DHCP服务功能。因为在Lan口，会和商家DHCP服务器冲突，网络异常。
+- 一个子网环境，只能容纳一个DHCP服务器。因此不关闭Lan口DHCP服务，有可能被视为你攻击商家网络，严格的商家可能视为你违约，封号处理。
+- Dnsmasq设置忽略向Lan口提供DHCP服务
+```
+uci set dhcp.lan.ignore="1"
+uci commit dhcp
+/etc/init.d/dnsmasq restart
+/etc/init.d/odhcpd restart
+```
+- DNS and DHCP官方文档：https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#disabling_dhcp_role
+<br>
+
+### 云服务器（虚拟机），多网口，多IP
+- 同宿主机，不再展开
+<br>
+
 ## 再次感谢
 
 - 没有以下的项目的支持，就没有【OpenWRT-虚拟化-服务器专用（OpenWRT-Virtualization-Servers）】的诞生。

@@ -197,6 +197,13 @@ uci commit dhcp
 - 同宿主机，不再展开
 <br>
 
+## [CXT - Enjoy Life | 生活、技术、交友、分享](https://www.cxthhhhh.com/)
+
+- [CXT 社区 | OpenWRT 玩家](https://bbs.cxthhhhh.com)
+- [Telegram 组群 Technical Blog | 技術博客](https://t.me/Technical_Blog)
+- [Telegram 频道 My Share](https://t.me/me_share)
+<br>
+
 ## CXT社区-软路由众筹交流
 - 点击链接加入群聊【CXT社区-软路由众筹交流】QQ群【708471105】：
 - https://jq.qq.com/?_wv=1027&k=WDoacIbd
@@ -225,9 +232,3 @@ uci commit dhcp
 - [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
 - [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
 
-
-## [CXT - Enjoy Life | 生活、技术、交友、分享](https://www.cxthhhhh.com/)
-
-- [CXT 社区 | OpenWRT 玩家](https://bbs.cxthhhhh.com)
-- [Telegram 组群 Technical Blog | 技術博客](https://t.me/Technical_Blog)
-- [Telegram 频道 My Share](https://t.me/me_share)

@@ -198,8 +198,9 @@ uci commit dhcp
 <br>
 
 ## CXT社区-软路由众筹交流
-- 点击链接加入群聊【CXT社区-软路由众筹交流】QQ群【708471105】：https://jq.qq.com/?_wv=1027&k=WDoacIbd
-<img src="https://raw.githubusercontent.com/MeowLove/OpenWRT-Virtualization-Servers/master/background/Preview_WebLogin.png">
+- 点击链接加入群聊【CXT社区-软路由众筹交流】QQ群【708471105】：
+- https://jq.qq.com/?_wv=1027&k=WDoacIbd
+<img src="https://raw.githubusercontent.com/MeowLove/OpenWRT-Virtualization-Servers/master/background/CXT-Router-Group-2021.png">
 <br>
 
 ## 再次感谢

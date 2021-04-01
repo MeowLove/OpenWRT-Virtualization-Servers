@@ -75,7 +75,7 @@
 
 - 广告屏蔽大师 Plus+（内网去广告） / WatchCat（断网自动重启）
 - 动态 DNS（DDNS IPV4 and IPV6） / 网络唤醒 / KMS服务器
-- ZeroTier（内网穿透，便于服务器集群的管理）
+- ZeroTier（内网穿透，便于服务器集群的管理）/ 端口转发管理
 
 ## 使用：
 

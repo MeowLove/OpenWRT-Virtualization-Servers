@@ -49,12 +49,13 @@
 </div>
 
 
-## [OpenWRT-虚拟化-服务器专用 （OpenWRT-Virtualization-Servers）](https://github.com/MeowLove/OpenWRT-Virtualization-Servers)<br>
+## [OpenWRT-虚拟化-服务器专用 （OpenWRT-Virtualization-Servers）](https://www.cxthhhhh.com/openwrt-virtualization-servers)<br>
 
 版本跟随 [一键网络重装系统-魔改版](https://www.cxthhhhh.com/network-reinstall-system-modify) 和 [Network-Reinstall-System-Modify](https://github.com/MeowLove/Network-Reinstall-System-Modify) 更新 <br><br>
 下载最新【OpenWRT-Virtualization-Servers】镜像：<br>
 - 1、https://odc.cxthhhhh.com/
 - 2、https://github.com/MeowLove/OpenWRT-Virtualization-Servers/releases/
+- 3、https://www.cxthhhhh.com/openwrt-virtualization-servers
 
 ## 功能：
 
@@ -82,6 +83,7 @@
 - 镜像为虚拟化服务器专用（PVE/VirtualBox/VMware/KVM/XEN/LXC）等x86_64平台使用。
 - 多种镜像可供选择（Legacy / UEFI）（ img / qcow2 / vmdk / vdi / bin ）
 - 支持定制其他设备镜像，可前往博客[CXT - Enjoy Life | 生活、技术、交友、分享](https://www.cxthhhhh.com/)联系定制。
+- 发布页面：https://www.cxthhhhh.com/openwrt-virtualization-servers
 <br>
 
 - 1、【虚拟机】下载镜像上传到您的宿主机，开虚拟机，将CXT-OpenWRT磁盘导入虚拟机使用。
